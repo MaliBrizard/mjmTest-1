@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="referrer" content="origin">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Girly Calendar</title>
+    <link rel="icon" type="image/svg" href="assets/media/img/test.png"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reboot.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href='vendor/fullcalendar/packages/core/main.css' rel='stylesheet' />
+    <link href='vendor/fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
+    <link href='vendor/fullcalendar/packages/interaction/main.css' rel='stylesheet' />
+    <link href='vendor/fullcalendar/packages/list/main.css' rel='stylesheet' />
+    <link href='vendor/fullcalendar/packages/timegrid/main.css' rel='stylesheet' />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <a id="logoNav" href="#">
+            <img src="assets/media/img/logo.png" alt="logo">
+        </a>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Events</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1>Events Calendar</h1>
+    <section id="calendarContent">
+        <div id="pres">
+            <p>Please drag ans drop the events for which you want to participate in the calendar below</p>
+        </div>
+        <div id="external-events">
+            <p>
+                <strong>Draggable Events</strong>
+            </p>
+            <div class="fc-event">My Event 1</div>
+            <div class="fc-event">My Event 2</div>
+            <div class="fc-event">My Event 3</div>
+            <div class="fc-event">My Event 4</div>
+            <div class="fc-event">My Event 5</div>
+            <p>
+                <input type="checkbox" id="drop-remove">
+                <label for="drop-remove">remove after drop</label>
+            </p>
+        </div>
+        <div id='calendar'></div>
+    </section>
+</main>
+<footer>
+    <ul class="footerUl">
+        <li>
+            <a href="#">Terms of use</a>
+        </li>
+        <li>
+            <a href="#">Legals</a>
+        </li>
+        <li>
+            <a href="#">Credits</a>
+        </li>
+        <li>
+            <a href="#">GDPR</a>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+    </ul>
+    <ul class="footerUl">
+        <li>Quantical Solutions</li>
+        <li>61 T Quinsus Street</li>
+        <li>Ambares & Lagrave - 33440</li>
+        <li>&copy; 2020</li>
+    </ul>
+    <ul class="footerUl">
+        <li>Next Event :</li>
+        <li>IoT Conference</li>
+        <li><i>3 Republic place<br>Bordeaux - 33000</i></li>
+        <li>
+            <img src="assets/media/img/iot.png">
+        </li>
+        <li>
+            <form method="post" enctype="multipart/form-data">
+                <input type="hidden" name="subscribe" value="1">
+            <button type="submit">Subscribe</button>
+            </form>
+        </li>
+    </ul>
+</footer>
+<script src='vendor/fullcalendar/packages/core/main.js'></script>
+<script src='vendor/fullcalendar/packages/daygrid/main.js'></script>
+<script src='vendor/fullcalendar/packages/interaction/main.js'></script>
+<script src='vendor/fullcalendar/packages/list/main.js'></script>
+<script src='vendor/fullcalendar/packages/timegrid/main.js'></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>

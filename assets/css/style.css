@@ -1,0 +1,233 @@
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #191919;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #3c3c3c;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4e4e4e;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'barlow_condensedmedium', sans-serif;
+    background-image: linear-gradient(45deg, #ff80b3, #660029);
+    color: #f1f1f1;
+}
+
+header {
+    background-color: #191919;
+}
+
+header, nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    width: calc(100% - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 40px;
+    background-color: #191919;
+}
+
+.footerUl {
+    width: calc(33.33% - 40px);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerUl li {
+    width: calc(100% - 40px);
+    padding: 10px 20px;
+}
+
+.footerUl:nth-child(2) {
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    width: calc(33.33% - 42px)!important;
+}
+
+.footerUl li img {
+    width: 100px;
+}
+
+.footerUl button {
+    cursor: pointer;
+    background-color: #660029;
+    color: #F1F1F1;
+    text-transform: uppercase;
+    font-family: 'barlow_condensedmedium', sans-serif;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'barlow_condensedbold', sans-serif;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+#pres {
+    text-align: center;
+    background-image: linear-gradient(to right, transparent, #3c3c3c, transparent);
+    padding: 20px;
+    width: calc(100% - 40px);
+}
+
+#pres p {
+    margin: 0;
+    color: #f1f1f1;
+}
+
+#logoNav {
+    margin: 0 40px;
+    width: calc(20% - 80px);
+}
+
+#logoNav img {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    padding: 0 40px;
+    width: calc(80% - 80px);
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: calc(100% - 40px);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ff80b3;
+}
+
+.left { float: left }
+.right { float: right }
+.clear { clear: both }
+
+#calendarContent {
+    align-items: stretch!important;
+}
+
+#calendar {
+    margin: 40px;
+    padding: 20px;
+    width: calc(70% - 124px);
+    background-color: #3c3c3c;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black inset;
+}
+
+#external-events {
+    padding: 0 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: #3c3c3c;
+    width: calc(30% - 40px);
+    box-shadow: 2px 2px 3px black inset;
+    border-radius: 10px;
+    margin: 40px auto;
+}
+
+#external-events .fc-event {
+    margin: 1em 0;
+    cursor: move;
+}
+
+#external-events p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#calendar-container {
+    position: relative;
+    z-index: 1;
+    margin-left: 200px;
+}
+
+.fc-day-top {
+    position: relative;
+}
+
+.fc-day-number {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    background-color: #f1f1f1;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border: 2px solid #ff80b3;
+}
+
+.fc-title, .fc-icon {
+    color: #660029;
+}
+

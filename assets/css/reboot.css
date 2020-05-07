@@ -1,0 +1,85 @@
+/*
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'bangersregular', sans-serif;
+}
+
+p, a, li, select, input, button, textarea, span, b, i, u, strong, em {
+    font-family: 'barlow_condensedlight', sans-serif;
+    font-size: 18px;
+    resize: none;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #F1F1F1;
+    transition: all linear 0.15s;
+}
+
+a:hover {
+    color: darkgoldenrod;
+}
+*/
+::-webkit-scrollbar {
+    width: 15px;
+    /*height: 6px;*/
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.partie-gauche ul::-webkit-scrollbar-thumb {
+    /*background-color: #FF0000;
+    border-radius: 10px;*/
+
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    background-image: url(../../CHARTE_ELEMENTS/SCROLL_B.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.partie-droite ul::-webkit-scrollbar-thumb {
+    /*background-color: #FF0000;
+    border-radius: 10px;*/
+
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    background-image: url(../../CHARTE_ELEMENTS/SCROLL_R.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    background-image: url(../../CHARTE_ELEMENTS/SCROLL_V.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+@media only screen and (min-width: 0px) and (max-width: 650px){
+
+    .partie-gauche ul::-webkit-scrollbar-thumb {
+        height: 30%;
+    }
+
+    .partie-droite ul::-webkit-scrollbar-thumb {
+        height: 30%;
+    }
+}
+
+
+
+
+
+
+
